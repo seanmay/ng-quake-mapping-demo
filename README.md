@@ -16,11 +16,11 @@ Because old technology is awesome. And new technology is awesome. And it is inte
   - go to `chrome://flags` ; set `--enable-unsafe-webgpu` ; close and reopen the browser
   - (this feature should ship in stable chrome within a couple of months; it's not as unsafe as it was, when the flag was made)
   - similar nightly / tech-preview browsers with similar flags exist for Safari, FF, Edge, etc
-- Unpack Quake MAP .zip into "/assets/id1"
-- Unpack Quake WAD .zip into "/assets/id1/gfx"
-- rename "/assets/id1/gfx/WIZARD.WAD" to "/assets/id1/gfx/wizard.wad"
+- Unpack Quake MAP .zip into "/quake/assets/id1"
+- Unpack Quake WAD .zip into "/quake/assets/id1/gfx"
+- rename "/quake/assets/id1/gfx/WIZARD.WAD" to "/quake/assets/id1/gfx/wizard.wad"
   - TODO: automate lowercasing of map/wad files (idSoft was making games on case-insensitive and uppercase-only systems so there are reference mismatches between data and filenames)
-- serve from root of project, and navigate to / (index.html)
+- serve from floder quake of project, and navigate to / (index.html)
 
 ## Controls
 
