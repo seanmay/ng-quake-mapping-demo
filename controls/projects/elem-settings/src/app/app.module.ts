@@ -22,5 +22,4 @@ export class AppModule {
     const el = createCustomElement(AppComponent, {injector : this.injector});
     customElements.define('elem-settings',el);
 }
-
 }

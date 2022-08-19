@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <style>
-      html {
-        background-color: black;
-      }
-      body {
-        margin: 0;
-      }
-      canvas {
-        display: block;
-      }
+        body {
+            margin: 0;
+        }
+        
+        canvas {
+            display: block;
+        }
     </style>
-    <!-- <script type="module" src="/libs/gpu-renderer.js"></script> -->
+    <div style="display: flex;">
+        <elem-map></elem-map>
+        <elem-map-selection></elem-map-selection>
+        <elem-settings></elem-settings>
+    </div>
+    <script type="module" src="/libs/gpu-renderer.js"></script>
     <script type="module" src="/main.js"></script>
-  </head>
-  <body></body>
+    <script src="/controls/elem-settings/polyfill-webcomp.js"></script>
+    <script src="/controls/elem-settings/polyfill-webcomp-es5.js"></script>
+    <script src="/controls/elem-map/map-element-es2015.js"></script>
+    <script src="/controls/elem-map-selection/map-selection-element-es2015.js"></script>
+    <script src="/controls/elem-settings/settings-element-es2015.js"></script>
+</head>
+
+<body></body>
+
 </html>
