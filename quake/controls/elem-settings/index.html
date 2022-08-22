@@ -7,7 +7,14 @@
 <link rel="stylesheet" href="styles.css"></head>
 
 <body>
-    <app-settings></app-settings>
+    <elem-settings></elem-settings>
+    <script>
+        function logEvent(event) {
+            console.log(event.type, event.detail);
+        }
+
+        document.addEventListener('APP_ELEM_SETTINGS_CHANGED', logEvent);
+    </script>
 <script src="runtime.js" type="module"></script><script src="polyfills.js" type="module"></script><script src="polyfill-webcomp-es5.js" defer></script><script src="polyfill-webcomp.js" defer></script><script src="main.js" type="module"></script>
 
 </body></html>

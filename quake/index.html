@@ -17,6 +17,14 @@
         <elem-map-selection></elem-map-selection>
         <elem-settings></elem-settings>
     </div>
+    <script>
+        function logEvent(event) {
+            console.log(event.type, event.detail);
+        }
+
+        document.addEventListener('APP_ELEM_MAP_SELECTED', logEvent);
+        document.addEventListener('APP_ELEM_SETTINGS_CHANGED', logEvent);
+    </script>
     <script type="module" src="/libs/gpu-renderer.js"></script>
     <script type="module" src="/main.js"></script>
     <script src="/controls/elem-settings/polyfill-webcomp.js"></script>
