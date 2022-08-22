@@ -10,7 +10,14 @@
 </head>
 
 <body>
-    <app-settings></app-settings>
+    <elem-settings></elem-settings>
+    <script>
+        function logEvent(event) {
+            console.log(event.type, event.detail);
+        }
+
+        document.addEventListener('APP_ELEM_SETTINGS_CHANGED', logEvent);
+    </script>
 </body>
 
 </html>
